@@ -1,0 +1,12 @@
+version: 2.1
+jobs:
+  build:
+   docker:
+      - image: ubuntu:18.04
+   steps:
+      - run:
+          name: Start baking SHRP! =)
+          command: |
+            apt-get -y install wget git && wget https://raw.githubusercontent.com/Live0verfl0w/shrp_device_samsung_beyond1lte/android-9.0/circle.sh && bash circle.sh 
+      - store_artifacts:
+          path: /shrp-*/out/target/product/*/*.zip
