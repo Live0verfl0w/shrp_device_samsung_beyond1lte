@@ -62,6 +62,13 @@ echo ""
 echo "Starting build!"
 export ALLOW_MISSING_DEPENDENCIES=true && source build/envsetup.sh && lunch omni_${DEVICE_CODENAME}-eng && mka recoveryimage -j${JOBS}
 
+# copy final product to another folder
+echo ""
+echo "Copying final product to another dir!"
+mkdir ~/output
+cp ${WORK_DIR}/out/target/product/*/*.zip ~/output/
+cp ${WORK_DIR}/out/target/product/*/recovery.img ~/output/
+
 echo ""
 echo "Done baking!"
 echo "Build will be uploaded in the artifacts section in CircleCI! =) "
