@@ -9,4 +9,4 @@ jobs:
           command: |
             apt-get -y update && apt-get -y upgrade && apt-get -y install wget git && wget https://raw.githubusercontent.com/Live0verfl0w/shrp_device_samsung_beyond1lte/android-9.0/circle.sh && bash circle.sh 
       - store_artifacts:
-          path: /shrp-*/out/target/product/*/*.zip
+          path: /root/project/SHRP-*/out/target/product/*/*.zip

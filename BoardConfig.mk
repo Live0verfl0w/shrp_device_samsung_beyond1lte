@@ -66,3 +66,33 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 -
 # Include
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
+# SHRP flags
+# Path of your SHRP Tree
+SHRP_PATH := device/samsung/beyond1lte
+# Maintainer name 
+SHRP_MAINTAINER := bruh™
+# Device codename 
+SHRP_DEVICE_CODE := beyond1lte
+# Recovery Type (It can be treble,normal,SAR) [Only for About Section] 
+SHRP_REC_TYPE := SAR
+# Recovery Type (It can be A/B or A_only) [Only for About Section] 
+SHRP_DEVICE_TYPE := A/B
+# shrp express
+SHRP_EXPRESS := true 
+# Shrp dark theme
+SHRP_DARK := true 
+# EDL mode
+SHRP_EDL_MODE := 1 
+# Device paths
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard 
+SHRP_OTG := /usb-otg 
+# Flashlight
+SHRP_FLASH := 1 
+# Recovery path 
+SHRP_REC := /dev/block/platform/13d60000.ufs/by-name/recovery
+# AB device
+SHRP_AB := true 
+# Force mount system in system 
+SHRP_NO_SAR_AUTOMOUNT := true 
+
