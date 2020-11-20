@@ -3,7 +3,7 @@
 
 MANIFEST_LINK=git://github.com/SKYHAWK-Recovery-Project/platform_manifest_twrp_omni.git
 BRANCH=android-9.0
-DEVICE_CODENAME=dreamlte
+DEVICE_CODENAME=beyond1lte
 GITHUB_USER=Live0verfl0w
 GITHUB_EMAIL=vsht700@gmail.com
 WORK_DIR=$(pwd)/SHRP-${DEVICE_CODENAME}
