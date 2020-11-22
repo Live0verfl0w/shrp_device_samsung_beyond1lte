@@ -76,7 +76,7 @@ SHRP_DEVICE_CODE := beyond1lte
 # Recovery Type (It can be treble,normal,SAR) [Only for About Section] 
 SHRP_REC_TYPE := SAR
 # Recovery Type (It can be A/B or A_only) [Only for About Section] 
-SHRP_DEVICE_TYPE := A/B
+SHRP_DEVICE_TYPE := A_only
 # shrp express
 SHRP_EXPRESS := true 
 # Shrp dark theme
@@ -92,7 +92,7 @@ SHRP_FLASH := 1
 # Recovery path 
 SHRP_REC := /dev/block/platform/13d60000.ufs/by-name/recovery
 # AB device
-SHRP_AB := true 
+SHRP_AB := false
 # Force mount system in system 
 SHRP_NO_SAR_AUTOMOUNT := true 
 
